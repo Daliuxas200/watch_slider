@@ -1,0 +1,17 @@
+.stats-blocks-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 10px;
+  column-gap: 10px;
+  max-width: 100%;
+}
+
+.stats-block {
+  background-color: $color-white;
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 25px;
+  @include respond(medium-small) {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,77 @@
+body {
+  font-family: "Oswald", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  letter-spacing: 0.5px;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: $color-primary;
+  margin-bottom: 15px;
+  @include respond(large) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  @include respond(medium) {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 36px;
+  color: $color-text-dark;
+  margin-bottom: 30px;
+  font-weight: 700;
+  @include respond(large) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  @include respond(medium) {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+
+h5 {
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $color-text-medium;
+}
+
+*:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+  box-shadow: none;
+}
+
+::-moz-selection {
+  background: transparent;
+}
+::selection {
+  background: transparent;
+}

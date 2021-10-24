@@ -1,0 +1,33 @@
+$bp-largest: 1450px;
+$bp-large: 1300px;
+$bp-medium: 1100px;
+$bp-medium-small: 600px;
+$bp-small: 400px;
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == small {
+    @media only screen and (max-width: $bp-small) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium-small {
+    @media only screen and (max-width: $bp-medium-small) {
+      @content;
+    }
+  }
+  @if $breakpoint == medium {
+    @media only screen and (max-width: $bp-medium) {
+      @content;
+    }
+  }
+  @if $breakpoint == large {
+    @media only screen and (max-width: $bp-large) {
+      @content;
+    }
+  }
+  @if $breakpoint == largest {
+    @media only screen and (max-width: $bp-largest) {
+      @content;
+    }
+  }
+}

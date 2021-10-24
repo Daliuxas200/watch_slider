@@ -1,0 +1,9 @@
+@mixin grid-template-columns-main() {
+  grid-template-columns: [full-start] 1fr [content-start] 1300px [content-end] 1fr [full-end];
+  @include respond(largest) {
+    grid-template-columns: [full-start] 50px [content-start] 1fr [content-end] 50px [full-end];
+  }
+  @include respond(small) {
+    grid-template-columns: [full-start] 20px [content-start] 1fr [content-end] 20px [full-end];
+  }
+}

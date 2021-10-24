@@ -1,0 +1,44 @@
+.button-small {
+  background-color: $color-grey-lightest;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+  font-size: 16px;
+  border: 1px solid $color-grey-light;
+  color: $color-text-medium;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-grey-light;
+  }
+
+  &.active {
+    background-color: $color-secondary;
+    color: $color-white;
+    border: none;
+    &:hover {
+      background-color: $color-secondary-dark;
+    }
+  }
+}
+
+.button-medium {
+  border-radius: 5px;
+  padding: 10px 30px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 0.5spx;
+  font-size: 18px;
+  background-color: $color-secondary;
+  color: $color-white;
+  border: none;
+  cursor: pointer;
+  &:hover {
+    background-color: $color-secondary-dark;
+  }
+  @include respond(medium-small) {
+    padding: 10px;
+    font-size: 16px;
+  }
+}
